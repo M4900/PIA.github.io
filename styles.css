@@ -7,26 +7,20 @@ body {
 
 header {
     background-color: #a349a4;
-    color:white;
+    color: white;
     padding: 20px;
     text-align: left;
 }
 
 ul.circle { 
-    
-     
     list-style-type: circle; 
+    padding: 0; /* Elimina el relleno por defecto */
 }
 
-
- ul.circle {
-    display: inline;
-    margin-right: 20px;
-}
-
-ul.circle {
-    color: purple;
-    text-decoration: none;
+ul.circle li {
+    display: inline; /* Asegúrate de que los elementos de la lista se muestren en línea */
+    margin-right: 20px; /* Espacio entre los elementos */
+    color: purple; /* Color del texto */
 }
 
 main {
@@ -38,3 +32,4 @@ footer {
     padding: 10px;
     background-color: #a349a4;
 }
+    
