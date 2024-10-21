@@ -12,7 +12,10 @@ header {
     text-align: left;
 }
 
-ul.circle {
+ul.circle { 
+    a {
+    text-decoration: none; 
+}
      
     list-style-type: circle; 
 }
