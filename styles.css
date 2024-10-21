@@ -12,18 +12,18 @@ header {
     text-align: left;
 }
 
-nav ul {
-    color:white;
-    list-style-type: none;
-    padding: 0;
+ul.circle {
+     color:white;
+    list-style-type: circle; 
 }
 
-nav ul li {
+
+ ul.circle {
     display: inline;
     margin-right: 20px;
 }
 
-nav ul li a {
+ul.circle {
     color: purple;
     text-decoration: none;
 }
