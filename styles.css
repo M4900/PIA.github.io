@@ -18,9 +18,9 @@ ul.circle {
 }
 
 ul.circle li {
-    display: inline; /* Asegúrate de que los elementos de la lista se muestren en línea */
-    margin-right: 20px; /* Espacio entre los elementos */
-    color: purple; /* Color del texto */
+    display: inline; 
+    margin-right: 20px; 
+    color: purple; 
 }
 
 main {
