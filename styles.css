@@ -68,6 +68,28 @@ body {
     user-select: none; /* Evita la selección de texto */
 }
 
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    user-select: none; /* Evita la selección de texto */
+}
+
 .container input {
     position: absolute;
     opacity: 0; /* Oculta el checkbox original */
@@ -110,4 +132,3 @@ body {
     border-width: 0 3px 3px 0; /* Estilo de la marca */
     transform: rotate(45deg); /* Rota para formar una "X" */
 }
-
