@@ -3,14 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conestu</title>
+    <title>CONESTU</title>
     <link rel="stylesheet" href="styles.css"> 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #C8A2C8;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #a349a4;
+            color: white;
+            padding: 20px;
+            position: relative; /* Para posicionar el menú desplegable */
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center; /* Centra verticalmente */
+        }
+
+        .menu-icon {
+            cursor: pointer; /* Cambia el cursor al pasar sobre el ícono */
+            font-size: 24px; /* Tamaño del ícono */
+            padding: 10px; /* Espaciado alrededor del ícono */
+            margin-right: 20px; /* Espaciado a la derecha para separarlo del título */
+        }
+
+        .dropdown {
+            display: none; /* Oculta el contenido del dropdown por defecto */
+            position: absolute; /* Posiciona el contenido de manera absoluta */
+            background-color: #f1f1f1; /* Color de fondo del dropdown */
+            min-width: 160px; 
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+            z-index: 1; 
+        }
+
+        .dropdown-content a {
+            color: black; /* Color del texto de los enlaces */
+            padding: 12px 16px; /* Espaciado interno para los enlaces */
+            text-decoration: none; /* Sin subrayado en los enlaces */
+            display: block; /* Hace que cada enlace ocupe toda la línea */
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd; /* Color de fondo al pasar el mouse sobre los enlaces */
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        ul {
+            list-style-type: circle; 
+            padding-left: 20px; 
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #a349a4;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="navbar">
             <div class="menu-icon" onclick="toggleMenu()">&#9776;</div> <!-- Ícono de menú hamburguesa -->
-            <h1>Conestu</h1>
+            <h1 style="margin-left: 10px;">CONESTU</h1> <!-- Título -->
         </div>
     </header>
 
@@ -23,11 +86,11 @@
     </div>
 
     <main>
-        <h2>Tu salud mental es primero</h2>
+        <h2>TU SALUD MENTAL ES PRIMERO</h2>
         <ul> 
-            <li><a href="#atencion-psicologica">Atención Psicológica sin salir de tu hogar</a></li>
-            <li><a href="#sesiones-online">Sesiones en línea</a></li>
-            <li><a href="#entorno-seguro">Entorno seguro</a></li>
+            <li><a href="#Iniciosesión">ATENCIÓN PSICOLÓGICA</a></li>
+            <li><a href="#sesiones-online">SESIONES EN LÍNEA</a></li>
+            <li><a href="#entorno-seguro">ENTORNO SEGURO</a></li>
         </ul>
     </main>
 
@@ -35,7 +98,7 @@
         <p>Consultorio digital.</p>
     </footer>
 
-    <!-- Script para manejar la apertura/cierre del menú desplegable -->
+   
     <script>
         function toggleMenu() {
             const dropdownMenu = document.getElementById('dropdownMenu');
@@ -45,8 +108,11 @@
                 dropdownMenu.style.display = "block";
                 // Cierra el menú si se hace clic fuera de él
                 window.onclick = function(event) {
-                    if (!event.target.matches('.menu-icon') && !event.target.matches('.dropdown-content a')) {
-                        dropdownMenu.style.display = "none";
+                    if (!event.target.matches('.menu-icon')) {
+                        const dropdownMenu = document.getElementById('dropdownMenu');
+                        if (dropdownMenu.style.display === "block") {
+                            dropdownMenu.style.display = "none";
+                        }
                     }
                 }
             }
