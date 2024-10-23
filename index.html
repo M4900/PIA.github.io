@@ -17,11 +17,13 @@
             background-color: #a349a4;
             color: white;
             padding: 20px;
+            text-align: left;
             position: relative; /* Para posicionar el menú desplegable */
         }
 
         .navbar {
             display: flex;
+            justify-content: space-between; /* Espaciado entre el título y el menú */
             align-items: center; /* Centra verticalmente */
         }
 
@@ -29,7 +31,6 @@
             cursor: pointer; /* Cambia el cursor al pasar sobre el ícono */
             font-size: 24px; /* Tamaño del ícono */
             padding: 10px; /* Espaciado alrededor del ícono */
-            margin-right: 20px; /* Espaciado a la derecha para separarlo del título */
         }
 
         .dropdown {
@@ -72,8 +73,8 @@
 <body>
     <header>
         <div class="navbar">
+            <h1>Conestu</h1>
             <div class="menu-icon" onclick="toggleMenu()">&#9776;</div> <!-- Ícono de menú hamburguesa -->
-            <h1 style="margin-left: 10px;">Conestu</h1> <!-- Título -->
         </div>
     </header>
 
