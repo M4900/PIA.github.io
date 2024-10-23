@@ -26,26 +26,18 @@
             align-items: center; /* Centra verticalmente */
         }
 
+        .menu-icon {
+            cursor: pointer; /* Cambia el cursor al pasar sobre el ícono */
+            font-size: 24px; /* Tamaño del ícono */
+        }
+
         .dropdown {
-            position: relative; /* Necesario para posicionar el contenido del dropdown */
-            display: inline-block; /* Muestra el dropdown en línea */
-        }
-
-        .dropbtn {
-            background-color: #3498DB; /* Color del botón */
-            color: white; /* Color del texto */
-            padding: 10px 20px; /* Espaciado interno */
-            border: none; /* Sin borde */
-            cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-        }
-
-        .dropdown-content {
             display: none; /* Oculta el contenido del dropdown por defecto */
             position: absolute; /* Posiciona el contenido de manera absoluta */
             background-color: #f1f1f1; /* Color de fondo del dropdown */
-            min-width: 160px; /* Ancho mínimo del dropdown */
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Sombra para el efecto de profundidad */
-            z-index: 1; /* Asegura que el dropdown esté por encima de otros elementos */
+            min-width: 160px; 
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+            z-index: 1; 
         }
 
         .dropdown-content a {
@@ -57,14 +49,6 @@
 
         .dropdown-content a:hover {
             background-color: #ddd; /* Color de fondo al pasar el mouse sobre los enlaces */
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block; /* Muestra el contenido del dropdown al pasar el mouse sobre él */
-        }
-
-        .dropdown:hover .dropbtn {
-            background-color: #2980B9; /* Cambia el color del botón al pasar el mouse */
         }
 
         main {
@@ -88,17 +72,17 @@
     <header>
         <div class="navbar">
             <h1>Conestu</h1>
-            <div class="dropdown"
-            onclick="toggleMenu()">&#9776;</div>    
-               
-                <div class="dropdown-content">
-                    <a href="#atencion-psicologica">Atención Psicológica</a>
-                    <a href="#sesiones-online">Sesiones en Línea</a>
-                    <a href="#entorno-seguro">Entorno Seguro</a>
-                </div>
-            </div> 
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div> <!-- Ícono de menú hamburguesa -->
         </div>
     </header>
+
+    <div class="dropdown" id="dropdownMenu">
+        <div class="dropdown-content">
+            <a href="#atencion-psicologica">Atención Psicológica</a>
+            <a href="#sesiones-online">Sesiones en Línea</a>
+            <a href="#entorno-seguro">Entorno Seguro</a>
+        </div>
+    </div>
 
     <main>
         <h2>Tu salud mental es primero</h2>
@@ -115,25 +99,21 @@
 
     <!-- Script para manejar la apertura/cierre del menú desplegable -->
     <script>
-        // Obtiene el botón y el contenido del dropdown
-        const dropbtn = document.querySelector('.dropbtn');
-        const dropdownContent = document.querySelector('.dropdown-content');
-
-        // Agrega un evento de clic al botón
-        dropbtn.addEventListener('click', function() {
-            // Alterna la visibilidad del contenido del dropdown
-            if (dropdownContent.style.display === "block") {
-                dropdownContent.style.display = "none";
+        function toggleMenu() {
+            const dropdownMenu = document.getElementById('dropdownMenu');
+            if (dropdownMenu.style.display === "block") {
+                dropdownMenu.style.display = "none";
             } else {
-                dropdownContent.style.display = "block";
+                dropdownMenu.style.display = "block";
             }
-        });
+        }
 
         // Cierra el menú si se hace clic fuera de él
         window.onclick = function(event) {
-          if (!event.target.matches('.dropbtn')) {
-              if (dropdownContent.style.display === "block") {
-                  dropdownContent.style.display = "none";
+          if (!event.target.matches('.menu-icon')) {
+              const dropdownMenu = document.getElementById('dropdownMenu');
+              if (dropdownMenu.style.display === "block") {
+                  dropdownMenu.style.display = "none";
               }
           }
         }
