@@ -31,10 +31,7 @@ a {
     text-decoration: none; /* Quita el subrayado */
     color: black; /* Cambia el color a negro */
 }
-.sin-estilo {
-    text-decoration: none;
-    color: black;
-}
+
 
 footer {
     text-align: center;
