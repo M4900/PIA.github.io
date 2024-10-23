@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CONESTU</title>
+    <title>Conestu</title>
     <link rel="stylesheet" href="styles.css"> 
     <style>
         body {
@@ -17,11 +17,13 @@
             background-color: #a349a4;
             color: white;
             padding: 20px;
+            text-align: left;
             position: relative; /* Para posicionar el menú desplegable */
         }
 
         .navbar {
             display: flex;
+            justify-content: space-between; /* Espaciado entre el título y el menú */
             align-items: center; /* Centra verticalmente */
         }
 
@@ -29,16 +31,15 @@
             cursor: pointer; /* Cambia el cursor al pasar sobre el ícono */
             font-size: 24px; /* Tamaño del ícono */
             padding: 10px; /* Espaciado alrededor del ícono */
-            margin-right: 20px; /* Espaciado a la derecha para separarlo del título */
         }
 
         .dropdown {
             display: none; /* Oculta el contenido del dropdown por defecto */
             position: absolute; /* Posiciona el contenido de manera absoluta */
             background-color: #f1f1f1; /* Color de fondo del dropdown */
-            min-width: 160px; 
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
-            z-index: 1; 
+            min-width: 160px; /* Ancho mínimo del dropdown */
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Sombra para el efecto de profundidad */
+            z-index: 1; /* Asegura que el dropdown esté por encima de otros elementos */
         }
 
         .dropdown-content a {
@@ -72,25 +73,25 @@
 <body>
     <header>
         <div class="navbar">
+            <h1>Conestu</h1>
             <div class="menu-icon" onclick="toggleMenu()">&#9776;</div> <!-- Ícono de menú hamburguesa -->
-            <h1 style="margin-left: 10px;">CONESTU</h1> <!-- Título -->
         </div>
     </header>
 
     <div class="dropdown" id="dropdownMenu">
         <div class="dropdown-content">
-            <a href="#atencion-psicologica">INICIAR SESIÓN</a>
-            <a href="#sesiones-online">PARA PSICÓLOGOS</a>
-            <a href="#entorno-seguro">CONTACTO</a>
+            <a href="#atencion-psicologica">Atención Psicológica</a>
+            <a href="#sesiones-online">Sesiones en Línea</a>
+            <a href="#entorno-seguro">Entorno Seguro</a>
         </div>
     </div>
 
     <main>
-        <h2>TU SALUD MENTAL ES PRIMERO</h2>
+        <h2>Tu salud mental es primero</h2>
         <ul> 
-            <li><a href="#Iniciosesión">ATENCIÓN PSICOLÓGICA</a></li>
-            <li><a href="#sesiones-online">SESIONES EN LÍNEA</a></li>
-            <li><a href="#entorno-seguro">ENTORNO SEGURO</a></li>
+            <li><a href="#atencion-psicologica">Atención Psicológica sin salir de tu hogar</a></li>
+            <li><a href="#sesiones-online">Sesiones en línea</a></li>
+            <li><a href="#entorno-seguro">Entorno seguro</a></li>
         </ul>
     </main>
 
@@ -98,7 +99,7 @@
         <p>Consultorio digital.</p>
     </footer>
 
-   
+    <!-- Script para manejar la apertura/cierre del menú desplegable -->
     <script>
         function toggleMenu() {
             const dropdownMenu = document.getElementById('dropdownMenu');
@@ -108,11 +109,8 @@
                 dropdownMenu.style.display = "block";
                 // Cierra el menú si se hace clic fuera de él
                 window.onclick = function(event) {
-                    if (!event.target.matches('.menu-icon')) {
-                        const dropdownMenu = document.getElementById('dropdownMenu');
-                        if (dropdownMenu.style.display === "block") {
-                            dropdownMenu.style.display = "none";
-                        }
+                    if (!event.target.matches('.menu-icon') && !event.target.matches('.dropdown-content a')) {
+                        dropdownMenu.style.display = "none";
                     }
                 }
             }
