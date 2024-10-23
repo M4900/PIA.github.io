@@ -29,3 +29,94 @@
             cursor: pointer; /* Cambia el cursor al pasar sobre el ícono */
             font-size: 24px; /* Tamaño del ícono */
             padding: 10px; /* Espaciado alrededor del ícono */
+            margin-right: 20px; /* Espaciado a la derecha para separarlo del título */
+        }
+
+        .dropdown {
+            display: none; /* Oculta el contenido del dropdown por defecto */
+            position: absolute; /* Posiciona el contenido de manera absoluta */
+            background-color: #f1f1f1; /* Color de fondo del dropdown */
+            min-width: 160px; 
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+            z-index: 1; 
+        }
+
+        .dropdown-content a {
+            color: black; /* Color del texto de los enlaces */
+            padding: 12px 16px; /* Espaciado interno para los enlaces */
+            text-decoration: none; /* Sin subrayado en los enlaces */
+            display: block; /* Hace que cada enlace ocupe toda la línea */
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd; /* Color de fondo al pasar el mouse sobre los enlaces */
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        ul {
+            list-style-type: circle; 
+            padding-left: 20px; 
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #a349a4;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div> <!-- Ícono de menú hamburguesa -->
+            <h1 style="margin-left: 10px;">CONESTU</h1> <!-- Título -->
+        </div>
+    </header>
+
+    <div class="dropdown" id="dropdownMenu">
+        <div class="dropdown-content">
+            <a href="#atencion-psicologica">INICIAR SESIÓN</a>
+            <a href="#sesiones-online">PARA PSICÓLOGOS</a>
+            <a href="#entorno-seguro">CONTACTO</a>
+        </div>
+    </div>
+
+    <main>
+        <h2>TU SALUD MENTAL ES PRIMERO</h2>
+        <ul> 
+            <li><a href="#Iniciosesión">ATENCIÓN PSICOLÓGICA</a></li>
+            <li><a href="#sesiones-online">SESIONES EN LÍNEA</a></li>
+            <li><a href="#entorno-seguro">ENTORNO SEGURO</a></li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>Consultorio digital.</p>
+    </footer>
+
+   
+    <script>
+        function toggleMenu() {
+            const dropdownMenu = document.getElementById('dropdownMenu');
+            if (dropdownMenu.style.display === "block") {
+                dropdownMenu.style.display = "none";
+            } else {
+                dropdownMenu.style.display = "block";
+                // Cierra el menú si se hace clic fuera de él
+                window.onclick = function(event) {
+                    if (!event.target.matches('.menu-icon')) {
+                        const dropdownMenu = document.getElementById('dropdownMenu');
+                        if (dropdownMenu.style.display === "block") {
+                            dropdownMenu.style.display = "none";
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
