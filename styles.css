@@ -110,9 +110,4 @@ body {
     border-width: 0 3px 3px 0; /* Estilo de la marca */
     transform: rotate(45deg); /* Rota para formar una "X" */
 }
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #a349a4;
-    color: white;
-} 
+
