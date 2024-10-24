@@ -6,7 +6,7 @@ body {
 }
 
 .titulo {
-    font-size: 78px; /* Tamaño del texto del título */
+    font-size: 100px; /* Tamaño del texto del título */
     color: #FFFFFF; /* Color BLANCOpara el título */
     text-align: left; /* DERECHA el texto */
     margin: 20px 0; /* Margen superior e inferior */
