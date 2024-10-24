@@ -135,4 +135,14 @@ body {
 button {
     margin-top: 20px; /* Espacio arriba del botón */
     padding: 10px 20px; /* Espaciado interno del botón */
+background-color: #C8A2C8; /* Cambia aquí el color del botón a lila */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+/* Estilo para el botón deshabilitado */
+button[disabled] {
+   background-color: #ccc; /* Color del botón deshabilitado */
 }
