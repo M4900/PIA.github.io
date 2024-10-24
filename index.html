@@ -112,7 +112,16 @@
 
     <script src="script.js"></script>
 
+<script>
+        function toggleSubmitButton() {
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            const submitButton = document.getElementById('submitButton');
 
+            // Verifica si al menos un checkbox está seleccionado
+            const isChecked = Array.from(checkboxes).some(checkbox => checkbox.checked);
+            submitButton.disabled = !isChecked; // Habilita o deshabilita el botón
+        }
+    </script>
 
 
 
