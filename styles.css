@@ -33,7 +33,7 @@ header {
 }
 
 .dropdown-content a {
-    color: black; /* Color del texto de los enlaces */
+    color: purple; /* Color del texto de los enlaces */
     padding: 12px 16px; /* Espaciado interno para los enlaces */
     text-decoration: none; /* Sin subrayado en los enlaces */
     display: block; /* Hace que cada enlace ocupe toda la línea */
