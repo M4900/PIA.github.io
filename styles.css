@@ -66,28 +66,7 @@ body {
     margin: 20px;
 }
 
-.container {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 22px;
-    user-select: none; /* Evita la selección de texto */
-     color:purple;
-}
 
-
-
-
-
-
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #C8A2C8;
-    margin: 20px;
-}
 
 .container {
     display: block;
@@ -97,6 +76,7 @@ body {
     cursor: pointer;
     font-size: 22px;
     user-select: none; /* Evita la selección de texto */
+    color:#A349A4;
 }
 
 .container input {
@@ -116,7 +96,7 @@ body {
 
 /* Cambia el color de fondo cuando se selecciona */
 .container input:checked ~ .checkmark {
-    background-color: #2196F3; /* Color cuando está seleccionado */
+    background-color: #A349A4; /* Color cuando está seleccionado */
 }
 
 /* Estilo para el checkmark (marca de verificación) */
