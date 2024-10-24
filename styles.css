@@ -132,3 +132,7 @@ body {
     border-width: 0 3px 3px 0; /* Estilo de la marca */
     transform: rotate(45deg); /* Rota para formar una "X" */
 }
+button {
+    margin-top: 20px; /* Espacio arriba del botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+}
