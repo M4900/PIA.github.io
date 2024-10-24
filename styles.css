@@ -74,6 +74,7 @@ body {
     cursor: pointer;
     font-size: 22px;
     user-select: none; /* Evita la selección de texto */
+     color:purple;
 }
 
 
