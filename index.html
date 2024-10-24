@@ -90,33 +90,35 @@
         <h2>TU SALUS MENTAL ES PRIMERO</h2>
 
 
-        
 
-    <label class="container">
-        ATENCIÓN PSICOLÓGICA PROFESIONAL SIN SALIR DE TU HOGAR
-        <input type="checkbox" id="atencion-psicologica">
-        <span class="checkmark"></span>
-    </label>
 
-    <label class="container">
-        SESIONES EN LÍNEA
-        <input type="checkbox" id="sesiones_online">
-        <span class="checkmark"></span>
-    </label>
+        <label class="container">
+            ATENCIÓN PSICOLÓGICA PROFESIONAL SIN SALIR DE TU HOGAR
+            <input type="checkbox" id="atencion-psicologica" onchange="toggleSubmitButton()">
+            <span class="checkmark"></span>
+        </label>
 
-    <label class="container">
-        ENTORNO SEGURO
-        <input type="checkbox" id="entorno_seguros">
-        <span class="checkmark"></span>
-    </label>
+        <label class="container">
+            SESIONES EN LÍNEA
+            <input type="checkbox" id="sesiones_online" onchange="toggleSubmitButton()">
+            <span class="checkmark"></span>
+        </label>
 
-    <script src="script.js"></script>
+        <label class="container">
+            ENTORNO SEGURO
+            <input type="checkbox" id="entorno_seguros" onchange="toggleSubmitButton()">
+            <span class="checkmark"></span>
+        </label>
 
-       
         <button id="submitButton" disabled>Enviar</button> <!-- Botón de enviar -->
-    </main> 
+    </main>
 
-<script>
+    <footer>
+        <p>Consultorio digital.</p>
+    </footer>
+
+    <!-- Script para manejar la habilitación del botón -->
+    <script>
         function toggleSubmitButton() {
             const checkboxes = document.querySelectorAll('input[type="checkbox"]');
             const submitButton = document.getElementById('submitButton');
@@ -126,6 +128,7 @@
             submitButton.disabled = !isChecked; // Habilita o deshabilita el botón
         }
     </script>
+
 
 
 
