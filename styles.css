@@ -7,7 +7,7 @@ body {
 
 .titulo {
     color: #A349A4; /* Color morado para el título */
-    text-align: center; /* Centra el texto */
+    text-align:left; /* Centra el texto */
     margin: 20px 0; /* Margen superior e inferior */
 }
 
