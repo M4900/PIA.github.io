@@ -5,6 +5,14 @@ body {
     padding: 0;
 }
 
+.titulo {
+    font-size: 48px; /* Tamaño del texto del título */
+    color: #FFFFFF; /* Color BLANCOpara el título */
+    text-align: left; /* DERECHA el texto */
+    margin: 20px 0; /* Margen superior e inferior */
+}
+
+
 header {
     background-color: #a349a4;
     color: white;
