@@ -24,65 +24,7 @@
     </div>
 
     <main>
-        <h2 class="titulo">TU SALUD MENTAL ES PRIMERO</h2>
+        <h2 class="titulo">Acerca de nosotros</h2>
 
-
-        
-
-
-        <label class="container">
-            ATENCIÓN PSICOLÓGICA PROFESIONAL SIN SALIR DE TU HOGAR
-            <input type="checkbox" id="atencion-psicologica" onchange="toggleSubmitButton()">
-            <span class="checkmark"></span>
-        </label>
-
-        <label class="container">
-            SESIONES EN LÍNEA
-            <input type="checkbox" id="sesiones_online" onchange="toggleSubmitButton()">
-            <span class="checkmark"></span>
-        </label>
-
-        <label class="container">
-            ENTORNO SEGURO
-            <input type="checkbox" id="entorno_seguros" onchange="toggleSubmitButton()">
-            <span class="checkmark"></span>
-        </label>
-
-        <button id="submitButton" disabled>Enviar</button> <!-- Botón de enviar -->
-    </main>
-
-
-    <!-- Script para manejar la habilitación del botón -->
-    <script>
-        function toggleSubmitButton() {
-            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-            const submitButton = document.getElementById('submitButton');
-
-            // Verifica si al menos un checkbox está seleccionado
-            const isChecked = Array.from(checkboxes).some(checkbox => checkbox.checked);
-            submitButton.disabled = !isChecked; // Habilita o deshabilita el botón
-        }
-    </script>
-    
-
-     
-
-    <!-- Script para manejar la apertura/cierre del menú desplegable -->
-    <script>
-        function toggleMenu() {
-            const dropdownMenu = document.getElementById('dropdownMenu');
-            if (dropdownMenu.style.display === "block") {
-                dropdownMenu.style.display = "none";
-            } else {
-                dropdownMenu.style.display = "block";
-                // Cierra el menú si se hace clic fuera de él
-                window.onclick = function(event) {
-                    if (!event.target.matches('.menu-icon') && !event.target.matches('.dropdown-content a')) {
-                        dropdownMenu.style.display = "none";
-                    }
-                }
-            }
-        }
-    </script>
 </body>
 </html>
