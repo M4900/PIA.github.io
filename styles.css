@@ -26,34 +26,7 @@ header {
     margin-right: 20px; /* Espaciado a la derecha para separarlo del título */
 }
 
-.dropdown {
-    display: none; /* Oculta el contenido del dropdown por defecto */
-    position: absolute; /* Posiciona el contenido de manera absoluta */
-    background-color: #f1f1f1; /* Color de fondo del dropdown */
-    min-width: 160px; 
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
-    z-index: 1; 
-}
 
-.dropdown-content a {
-    color: purple; /* Color del texto de los enlaces */
-    padding: 12px 16px; /* Espaciado interno para los enlaces */
-    text-decoration: none; /* Sin subrayado en los enlaces */
-    display: block; /* Hace que cada enlace ocupe toda la línea */
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd; /* Color de fondo al pasar el mouse sobre los enlaces */
-}
-
-main {
-    padding: 20px;
-}
-
-ul {
-    list-style-type: circle; 
-    padding-left: 20px; 
-}
 
 body {
     font-family: Arial, sans-serif;
@@ -78,70 +51,5 @@ body {
 
 
 
-.container {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 22px;
-    user-select: none; /* Evita la selección de texto */
-    color:#A349A4;
-}
 
-.container input {
-    position: absolute;
-    opacity: 0; /* Oculta el checkbox original */
-}
 
-.checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #eee; /* Color de fondo del checkbox */
-    border-radius: 50%; /* Hace que el checkbox sea circular */
-}
-
-/* Cambia el color de fondo cuando se selecciona */
-.container input:checked ~ .checkmark {
-    background-color: #A349A4; /* Color cuando está seleccionado */
-}
-
-/* Estilo para el checkmark (marca de verificación) */
-.checkmark::after {
-    content: "";
-    position: absolute;
-    display: none; /* Oculta la marca por defecto */
-}
-
-/* Muestra la marca cuando está seleccionado */
-.container input:checked ~ .checkmark::after {
-    display: block; /* Muestra la marca */
-}
-
-/* Estilo de la marca de verificación */
-.checkmark::after {
-    left: 10px; /* Posiciona la marca dentro del círculo */
-    top: 5px; /* Ajusta verticalmente */
-    width: 5px; /* Ancho de la marca */
-    height: 10px; /* Alto de la marca */
-    border: solid white; /* Color de la marca */
-    border-width: 0 3px 3px 0; /* Estilo de la marca */
-    transform: rotate(45deg); /* Rota para formar una "X" */
-}
-button {
-    margin-top: 20px; /* Espacio arriba del botón */
-    padding: 10px 20px; /* Espaciado interno del botón */
-background-color: #A349A4; /* Cambia aquí el color del botón a MORADO */
-    color: white; /* Color del texto del botón */
-    border: none; /* Sin borde */
-    border-radius: 10px; /* Bordes redondeados */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-}
-
-/* Estilo para el botón deshabilitado */
-button[disabled] {
-   background-color: #ccc; /* Color del botón deshabilitado */
-}
