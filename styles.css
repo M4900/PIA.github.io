@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #C8A2C8;
+    background-color: #a349a4;
     margin: 0;
     padding: 0;
 }
@@ -10,6 +10,9 @@ header {
     color: white;
     padding: 20px;
     position: rigth;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
 }
 
 ul {
@@ -25,10 +28,12 @@ input {
     display: none; /* Oculta el checkbox */
 }
 
+
+
 label {
     box-sizing: border-box;
-    display: inline-block;
-    border: 1px solid black;
+    display:block;
+    border: 1px solid purple;
     border-radius: 5px;
     width: 30px;
     height: 30px;
