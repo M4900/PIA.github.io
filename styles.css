@@ -5,54 +5,54 @@ body {
     padding: 0;
 }
 
-
-
 header {
     background-color: #a349a4;
     color: white;
     padding: 20px;
+    position: relative; /* Para posicionar el menú correctamente */
 }
 
-ul{
-  display: none;
+ul {
+    display: none; /* Oculta el menú por defecto */
+    padding: 0; /* Elimina el padding por defecto */
 }
 
-input:checked  ~ ul{
-  display:block;
+input:checked ~ ul {
+    display: block; /* Muestra el menú cuando está chequeado */
 }
+
 input {
- display: none;
+    display: none; /* Oculta el checkbox */
 }
-<label for="menu"> ☰ </label>
+
 label {
-  box-sizing: border-box;
-  display: inline-block;
-  border: 1px solid black;
-  border-radius: 5px;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  font-weight: bold;
-  text-align: center;
-  user-select: none;
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el label */
 }
+
 li {
-  display: block;
-  background: lightgrey;
-  margin: 0;
-  padding: 10px;
-  list-style: none;
-  border-bottom: 1px solid grey;
+    display: block; /* Muestra los elementos del menú como bloques */
+    background: lightgrey;
+    margin: 0;
+    padding: 10px;
+    list-style: none; /* Elimina los puntos de la lista */
+    border-bottom: 1px solid grey; /* Añade un borde inferior */
 }
 
+li a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: black; /* Color del texto de los enlaces */
+}
 
-
-
-
-
-
-
-
-
-
-
+li a:hover {
+    background-color: #ddd; /* Cambia el fondo al pasar el mouse */
+}
