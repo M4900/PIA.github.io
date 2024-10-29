@@ -74,3 +74,10 @@ h1 {
   font-weight: 700;
   font-style: italic;
 }
+
+h2 {
+    .cormorant-garamond-light-italic {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+  font-style: italic;
+}
