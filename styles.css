@@ -16,7 +16,7 @@ header {
 }
 .imagen {
     width: 250px; 
-    height: 350px; 
+    height: auto; 
     border-radius:25px;
 }
 
