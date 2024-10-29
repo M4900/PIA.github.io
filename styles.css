@@ -14,37 +14,63 @@ header {
 }
 
 
-.navbar {
-    display: flex;
-    align-items: center; /* Centra verticalmente */
+
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    position: relative;
 }
 
 .menu-icon {
-    cursor: pointer; /* Cambia el cursor al pasar sobre el ícono */
-    font-size: 24px; /* Tamaño del ícono */
-    padding: 10px; /* Espaciado alrededor del ícono */
-    margin-right: 20px; /* Espaciado a la derecha para separarlo del título */
+    display: block;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.menu-icon span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px auto;
+    transition: all 0.3s ease;
+}
+
+#menu-toggle {
+    display: none; /* Oculta el checkbox */
+}
+
+.menu {
+    display: none; /* Oculta el menú por defecto */
+    list-style-type: none;
+    padding: 0;
+}
+
+#menu-toggle:checked + .menu-icon span:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+#menu-toggle:checked + .menu-icon span:nth-child(2) {
+    opacity: 0; /* Oculta la segunda barra */
+}
+
+#menu-toggle:checked + .menu-icon span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+#menu-toggle:checked ~ .menu {
+    display: block; /* Muestra el menú al activar el checkbox */
 }
 
 
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #E6E6FA;
-    margin: 20px;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #E6E6FA; /* Color lila claro como fondo */
-}
 
 
-.titulo {
-    color: #A349A4; /* Color morado para el título */
-    text-align:left; /* Centra el texto */
-    margin: 20px 0; /* Margen superior e inferior */
-}
 
 
 
