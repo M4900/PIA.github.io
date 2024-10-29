@@ -67,3 +67,9 @@ li a {
 li a:hover {
     background-color: #ddd; 
 }
+
+h1 {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: italic;
+}
