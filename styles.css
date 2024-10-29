@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #C8A2CB;
+    background-color: #a349a4;
     color: white;
     padding: 20px;
     position: rigth;
@@ -40,17 +40,17 @@ label {
 }
 
 li {
-    display: block; /* Muestra los elementos del menú como bloques */
-    background: lightgrey;
+    display: block; 
+    background: lightpurple;
     margin: 0;
     padding: 10px;
     list-style: none; /* Elimina los puntos de la lista */
-    border-bottom: 1px solid grey; /* Añade un borde inferior */
+    border-bottom: 1px solid purple; /* Añade un borde inferior */
 }
 
 li a {
     text-decoration: none; /* Elimina el subrayado de los enlaces */
-    color: black; /* Color del texto de los enlaces */
+    color: white; /* Color del texto de los enlaces */
 }
 
 li a:hover {
