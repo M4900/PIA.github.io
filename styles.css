@@ -6,10 +6,10 @@ body {
 }
 
 header {
-    background-color: #a349a4;
+    background-color: #C8A2CB;
     color: white;
     padding: 20px;
-    position: relative; /* Para posicionar el menú correctamente */
+    position: rigth;
 }
 
 ul {
