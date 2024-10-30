@@ -92,7 +92,7 @@ h2 {
 }
 
 p {
-    margin: 40px; 
+    margin: 50px; 
     font-family: "Libre Baskerville", serif;
     font-weight: 400;
     font-style: italic;
@@ -101,7 +101,7 @@ p {
 }
 
 footer {
-      background-color: rgba(128, 0, 128, 0.5); /* Morado con 50% de transparencia */
+     background-color: rgba(128, 0, 128, 0.5); /* Morado con 50% de transparencia */
     color: white; /* Color del texto */
     text-align: center; /* Centra el texto */
     padding: 20px; /* Espaciado interno */
