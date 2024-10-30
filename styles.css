@@ -1,8 +1,8 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #C8A2C8;
-    margin: 0;
-    padding: 0;
+    background-color: #C8A2C8; /* Color de fondo */
+    margin: 0; /* Elimina márgenes por defecto */
+    padding: 0; /* Elimina padding por defecto */
 }
 
 header {
@@ -57,7 +57,7 @@ label {
 
 li {
     display: block; 
-    background-color: lightpurple;  
+    background-color: lightgray; /* Cambiado a un color válido (lightgray) */
     margin: 0;
     padding: 10px;
     list-style-type: none; 
