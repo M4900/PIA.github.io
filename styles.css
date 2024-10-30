@@ -14,18 +14,21 @@ header {
     align-items: center; /* Centra verticalmente los elementos */
 }
 
+.logo-container {
+    display: flex; /* Alinear logo e h1 horizontalmente */
+    align-items: center; /* Centra verticalmente el contenido del contenedor */
+}
+
 .imagen {
     width: 100px; 
     height: 100px; 
     border-radius: 25px; /* Bordes redondeados */
-    float: left; /* Alinea la imagen a la izquierda */
     margin-right: 15px; /* Espacio entre la imagen y el texto */
 }
 
 .clearfix::after {
     content: ""; /* Crea un contenido vacío para limpiar el float */
     clear: both; /* Limpia el flujo del documento después del float */
-    display: table;
 }
 
 ul {
@@ -75,8 +78,6 @@ li a:hover {
 
 h1 {
     font-family: "Libre Baskerville", serif;
-    font-weight: 700;
-    font-style: italic;
 }
 
 h2 {
@@ -100,17 +101,17 @@ p {
 }
 
 footer {
-   
-    color: white; /* Color del texto */
-    text-align: center; /* Centra el texto en el pie de página */
-    padding: 20px; /* Espaciado interno en el pie de página */
+   background-color: #DDA0DD; /* Añadir color de fondo al pie de página para mayor claridad */
+   color: white; /* Color del texto en el pie de página */
+   text-align: center; /* Centra el texto en el pie de página */
+   padding: 20px; /* Espaciado interno en el pie de página */
 }
 
 footer a {
-    color: white; /* Color del enlace en el pie de página */
-    text-decoration: none; /* Sin subrayado por defecto en enlaces del pie de página */
+   color: white; /* Color del enlace en el pie de página */
+   text-decoration: none; /* Sin subrayado por defecto en enlaces del pie de página */
 }
 
 footer a:hover {
-    text-decoration: underline; /* Subrayado al pasar el mouse sobre los enlaces en el pie de página */
+   text-decoration: underline; /* Subrayado al pasar el mouse sobre los enlaces en el pie de página */
 }
