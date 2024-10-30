@@ -96,3 +96,19 @@ p {
     color: black; /* Color negro para p */
     text-align: justify; /* Justifica el texto en p */
 }
+
+footer {
+    background-color: #A59AD1; /* Color de fondo del pie de página */
+    color: white; /* Color del texto */
+    text-align: center; /* Centra el texto */
+    padding: 20px; /* Espaciado interno */
+}
+
+footer a {
+    color: white; /* Color del enlace */
+    text-decoration: none; /* Sin subrayado */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
