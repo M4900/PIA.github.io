@@ -8,7 +8,7 @@ body {
 header {
    
 
-    background-color: rgba(128, 0, 128, 0.5); /* Morado con 50% de transparencia */
+    background-color: #DDA0DD; 
         
     color: white; /* Color del texto */
     padding: 20px; /* Espaciado interno */
@@ -101,7 +101,7 @@ p {
 }
 
 footer {
-    background-color: #C8A2C8; /* Color de fondo */
+    background-color: #DDA0DD; /* Color de fondo */
     color: white; /* Color del texto */
     text-align: center; /* Centra el texto */
     padding: 20px; /* Espaciado interno */
