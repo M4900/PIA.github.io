@@ -83,8 +83,9 @@ h2 {
     font-family: "Libre Baskerville", serif;
     font-weight: 400;
     font-style: italic;
-    color: black;
+    color: black; /* Color negro para h2 */
     margin: 20px; 
+    text-align: justify; /* Justifica el texto en h2 */
 }
 
 p {
@@ -92,6 +93,6 @@ p {
     font-family: "Libre Baskerville", serif;
     font-weight: 400;
     font-style: italic;
-    color: black;    
-}     
-
+    color: black; /* Color negro para p */
+    text-align: justify; /* Justifica el texto en p */
+}
