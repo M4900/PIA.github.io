@@ -101,11 +101,17 @@ p {
 }
 
 footer {
-    background-color: rgba(128, 0, 128, 0.5); /* Morado con 50% de transparencia */
+    background-color: #C8A2C8; /* Color de fondo */
     color: white; /* Color del texto */
     text-align: center; /* Centra el texto */
     padding: 20px; /* Espaciado interno */
 }
+
+ .morado-rgba {
+            background-color: rgba(128, 0, 128, 0.5); /* Morado con 50% de transparencia */
+            padding: 20px;
+            margin-bottom: 10px;
+        }
 
 footer a {
     color: white; /* Color del enlace */
