@@ -63,7 +63,7 @@ h2 {
             background-color: #D7CDFE;
         }
 .btn-volver {
-    background-color: #f44336; /* Color de fondo */
+    background-color:  #CAC7FF /* Color de fondo */
     color: white; /* Color del texto */
     border: none; /* Sin borde */
     padding: 10px; /* Espaciado interno */
@@ -75,5 +75,5 @@ h2 {
 }
 
 .btn-volver:hover {
-    background-color: #c62828; /* Cambia el color de fondo al pasar el ratón */
+    background-color: #D7CDFE; /* Cambia el color de fondo al pasar el ratón */
 }
