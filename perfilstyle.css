@@ -15,13 +15,16 @@ header {
     align-items: center; /* Centra verticalmente los elementos */
 }
 
-main {
-        padding: 20px; /* Espacio interno */
-        margin: 0 auto; /* Centro el contenido */
-        max-width: 1100px; /* Limita el ancho máximo */
-    }
 .container {
     display: flex; /* Usar flexbox para la disposición */
+    min-height: calc(100vh - 160px); /* Altura mínima del contenedor restando el header y footer */
+}
+
+main {
+    padding: 20px; /* Espacio interno */
+    margin: 0; /* Elimina márgenes */
+    max-width: 1100px; /* Limita el ancho máximo */
+    flex-grow: 1; /* Permite que el main ocupe el espacio restante */
 }
 
 .sidebar {
