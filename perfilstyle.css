@@ -1,0 +1,52 @@
+body {
+    font-family: "Libre Baskerville", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #DDA0DD; /* Color de fondo del encabezado */
+    color: white; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    text-align: center;
+}
+
+.container {
+    display: flex; /* Usar flexbox para la disposición */
+}
+
+.sidebar {
+    width: 200px; /* Ancho del menú lateral */
+    background-color: #DDA0DD; /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+}
+
+.sidebar ul {
+    list-style: none; /* Sin viñetas */
+    padding: 0; /* Sin padding */
+}
+
+.sidebar ul li {
+    margin: 10px 0; /* Espaciado entre elementos */
+}
+
+.sidebar ul li a {
+    color: white; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    padding: 10px; /* Espaciado interno */
+    display: block; /* Ocupa todo el ancho */
+}
+
+.sidebar ul li a:hover {
+    background-color: #809BCE; /* Color de fondo al pasar el ratón */
+}
+
+.content {
+    flex-grow: 1; /* Ocupar el espacio restante */
+    padding: 20px; /* Espaciado interno */
+}
+
+.info {
+    display: none; /* Ocultar todos los bloques de información por defecto */
+}
