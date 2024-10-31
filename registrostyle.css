@@ -1,3 +1,13 @@
+header {
+    background-color: #DDA0DD; /* Color de fondo del encabezado */
+    color: white; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    display: flex; /* Usar flexbox para alinear elementos */
+    justify-content: space-between; /* Espacio entre elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+
 .form-container {
             max-width: 400px;
             margin: auto;
