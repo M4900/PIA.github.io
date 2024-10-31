@@ -98,3 +98,12 @@ footer a {
 footer a:hover {
    text-decoration: underline; /* Subrayado al pasar el mouse sobre los enlaces en el pie de página */
 }
+p {
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic;
+    color: black; /* Color negro para p */
+    text-align: justify; /* Justifica el texto en p */
+}
