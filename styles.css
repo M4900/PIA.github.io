@@ -23,7 +23,7 @@ header {
     width: 100px; 
     height: 100px; 
     border-radius: 25px; /* Bordes redondeados */
-    margin-right: 15px; /* Espacio entre la imagen y el texto */
+    margin-right: 0px; /* Espacio entre la imagen y el texto */
 }
 
 .clearfix::after {
