@@ -63,3 +63,6 @@ main {
     border-radius: 25px; /* Bordes redondeados */
     margin-right: 0px; /* Espacio entre la imagen y el texto */
 }
+h1 {
+    font-family: "Libre Baskerville", serif;
+}
