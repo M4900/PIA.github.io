@@ -83,3 +83,18 @@ h1 {
 .btn-volver:hover {
     background-color: #D7CDFE; /* Cambia el color de fondo al pasar el ratón */
 }
+footer {
+   background-color: #DDA0DD; /* Añadir color de fondo al pie de página para mayor claridad */
+   color: white; /* Color del texto en el pie de página */
+   text-align: center; /* Centra el texto en el pie de página */
+   padding: 20px; /* Espaciado interno en el pie de página */
+}
+
+footer a {
+   color: white; /* Color del enlace en el pie de página */
+   text-decoration: none; /* Sin subrayado por defecto en enlaces del pie de página */
+}
+
+footer a:hover {
+   text-decoration: underline; /* Subrayado al pasar el mouse sobre los enlaces en el pie de página */
+}
