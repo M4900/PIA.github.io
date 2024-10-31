@@ -112,12 +112,13 @@ li {
     list-style-type: none; 
     border-bottom: 1px solid purple; 
     border-radius: 8px; /* Ajusta el valor para el grado de redondeo */
-
+    
 }
 
 li a {
     text-decoration: none; 
     color: white; /* Color del enlace en la lista */
+     font-family: "Libre Baskerville", serif;
 }
 
 li a:hover {
