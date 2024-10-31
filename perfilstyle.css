@@ -110,7 +110,7 @@ li {
     margin: 0;
     padding: 10px;
     list-style-type: none; 
-    border-bottom: 1px solid purple; 
+    border-bottom: 8px solid purple; 
 }
 li a {
     text-decoration: none; 
