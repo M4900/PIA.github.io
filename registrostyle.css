@@ -1,5 +1,5 @@
 body {
-   
+    font-family: Arial, sans-serif; /* Fuente del cuerpo */
     background-color: #C8A2C8; /* Color de fondo */
     margin: 0; /* Elimina márgenes por defecto */
     padding: 0; /* Elimina padding por defecto */
