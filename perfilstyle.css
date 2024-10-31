@@ -1,12 +1,9 @@
-html, body {
-    height: 100%; /* Asegura que el body ocupe toda la altura */
-    margin: 0; /* Elimina márgenes del body */
-}
-
 body {
     font-family: Arial, sans-serif; /* Fuente del cuerpo */
     background-color: #C8A2C8; /* Color de fondo */
+    margin: 0; /* Elimina márgenes por defecto */
     padding: 0; /* Elimina padding por defecto */
+    height: 100%;
 }
 
 header {
@@ -18,16 +15,13 @@ header {
     align-items: center; /* Centra verticalmente los elementos */
 }
 
+main {
+        padding: 20px; /* Espacio interno */
+        margin: 0 auto; /* Centro el contenido */
+        max-width: 1100px; /* Limita el ancho máximo */
+    }
 .container {
     display: flex; /* Usar flexbox para la disposición */
-    min-height: calc(100vh - 160px); /* Altura mínima del contenedor restando el header y footer */
-}
-
-main {
-    padding: 20px; /* Espacio interno */
-    margin: 0; /* Elimina márgenes */
-    max-width: 1100px; /* Limita el ancho máximo */
-    flex-grow: 1; /* Permite que el main ocupe el espacio restante */
 }
 
 .sidebar {
@@ -36,13 +30,65 @@ main {
     padding: 20px; /* Espaciado interno */
 }
 
-/* Resto de tu CSS permanece igual... */
+.sidebar ul {
+    list-style: none; /* Sin viñetas */
+    padding: 0; /* Sin padding */
+}
+
+.sidebar ul li {
+    margin: 10px 0; /* Espaciado entre elementos */
+}
+
+.sidebar ul li a {
+    color: white; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    padding: 10px; /* Espaciado interno */
+    display: block; /* Ocupa todo el ancho */
+}
+
+.sidebar ul li a:hover {
+    background-color: #809BCE; /* Color de fondo al pasar el ratón */
+}
+
+.content {
+    flex-grow: 1; /* Ocupar el espacio restante */
+    padding: 20px; /* Espaciado interno */
+}
+
+.info {
+    display: none; /* Ocultar todos los bloques de información por defecto */
+}
+.imagen {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 25px; /* Bordes redondeados */
+    margin-right: 0px; /* Espacio entre la imagen y el texto */
+}
+h1 {
+    font-family: "Libre Baskerville", serif;
+}
 
 footer {
-    background-color: #DDA0DD; /* Añadir color de fondo al pie de página para mayor claridad */
-    color: white; /* Color del texto en el pie de página */
-    text-align: center; /* Centra el texto en el pie de página */
-    padding: 20px; /* Espaciado interno en el pie de página */
-    position: relative; /* Asegura que el footer se coloque en el flujo normal del documento */
-    clear: both; /* Asegura que el footer se coloque debajo de los elementos flotantes */
+   background-color: #DDA0DD; /* Añadir color de fondo al pie de página para mayor claridad */
+   color: white; /* Color del texto en el pie de página */
+   text-align: center; /* Centra el texto en el pie de página */
+   padding: 20px; /* Espaciado interno en el pie de página */
+}
+
+footer a {
+   color: white; /* Color del enlace en el pie de página */
+   text-decoration: none; /* Sin subrayado por defecto en enlaces del pie de página */
+}
+
+footer a:hover {
+   text-decoration: underline; /* Subrayado al pasar el mouse sobre los enlaces en el pie de página */
+}
+p {
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic;
+    color: black; /* Color negro para p */
+    text-align: justify; /* Justifica el texto en p */
 }
