@@ -104,3 +104,20 @@ h2 {
     margin-bottom: 10px; 
     text-align: justify; /* Justifica el texto en h2 */
 }
+li {
+    display: block; 
+    background-color: lightgray; /* Color de fondo del elemento de lista */
+    margin: 0;
+    padding: 10px;
+    list-style-type: none; 
+    border-bottom: 1px solid purple; 
+}
+
+li a {
+    text-decoration: none; 
+    color: white; /* Color del enlace en la lista */
+}
+
+li a:hover {
+    background-color: #ddd; /* Color de fondo al pasar el mouse sobre el enlace */
+}
