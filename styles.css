@@ -19,7 +19,14 @@ main {
         margin: 0 auto; /* Centro el contenido */
         max-width: 800px; /* Limita el ancho máximo */
     }
-
+.button {
+    background: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 .logo-container {
     display: flex; /* Alinear logo e h1 horizontalmente */
     align-items: center; /* Centra verticalmente el contenido del contenedor */
