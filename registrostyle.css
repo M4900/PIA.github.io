@@ -5,7 +5,9 @@ body {
     padding: 0; /* Elimina padding por defecto */
 }
 
-
+h1 {
+    font-family: "Libre Baskerville", serif;
+}
 header {
     background-color: #DDA0DD; /* Color de fondo del encabezado */
     color: white; /* Color del texto */
