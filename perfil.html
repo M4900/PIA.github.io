@@ -85,12 +85,17 @@
             margin: 10px;
             border-radius: 10px;
             text-align: center;
-            width: 300px; /* Ancho fijo */
+            width: 100%; /* Ocupar todo el ancho disponible */
+            max-width: 300px; /* Ancho máximo */
         }
         .row {
             display: flex;
             justify-content: space-between;
-            width: 300px; /* Ancho fijo */
+            width: 100%; /* Ocupar todo el ancho disponible */
+        }
+        .row .account-box {
+            flex: 1; /* Permitir que los rectángulos ocupen espacio igual */
+            margin: 5px; /* Espaciado entre los rectángulos */
         }
     </style>
 </head>
@@ -145,7 +150,7 @@
                 </div>
             </div>
             <div id="cuenta" class="info" style="display: none;">
-                <h2 class="account-box">Mi Cuenta</h2>
+                <div class="account-box">Mi Cuenta</div>
                 <div class="account-container">
                     <div class="row">
                         <div class="account-box">Nombre</div>
