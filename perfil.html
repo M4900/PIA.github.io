@@ -72,6 +72,26 @@
             margin-top: 20px;
             color: #888; /* Color gris para la leyenda */
         }
+        .account-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .account-box {
+            background-color: #AF7AC5;
+            color: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            text-align: center;
+            width: 300px; /* Ancho fijo */
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+            width: 300px; /* Ancho fijo */
+        }
     </style>
 </head>
 <body>
@@ -93,7 +113,7 @@
                 <div class="citas-container">
                     <div class="citas-box">
                         <h2>Próximas citas</h2>
-                        <p>No tienes citas programadas.</p> <!-- Puedes personalizar este contenido -->
+                        <p>No tienes citas programadas.</p>
                     </div>
                     <div class="citas-box button-container">
                         <button class="button">Agendar</button>
@@ -125,8 +145,18 @@
                 </div>
             </div>
             <div id="cuenta" class="info" style="display: none;">
-                <h2>Mi Cuenta</h2>
-                <p>Gestiona la información de tu cuenta aquí.</p>
+                <h2 class="account-box">Mi Cuenta</h2>
+                <div class="account-container">
+                    <div class="row">
+                        <div class="account-box">Nombre</div>
+                        <div class="account-box">Apellido</div>
+                    </div>
+                    <div class="row">
+                        <div class="account-box">País</div>
+                        <div class="account-box">Correo</div>
+                    </div>
+                    <button class="button" onclick="mostrarContenido('citas')">Cerrar Sesión</button>
+                </div>
             </div>
         </main>
     </div>
