@@ -106,7 +106,7 @@ h2 {
 }
 li {
     display: block; 
-    background-color: lightgray; /* Color de fondo del elemento de lista */
+    background-color: #AF7AC5; /* Color de fondo del elemento de lista */
     margin: 0;
     padding: 10px;
     list-style-type: none; 
