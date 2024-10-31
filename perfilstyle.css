@@ -95,3 +95,12 @@ p {
     color: black; /* Color negro para p */
     text-align: justify; /* Justifica el texto en p */
 }
+h2 {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic;
+    color: black; /* Color negro para h2 */
+    margin-top: 30px; 
+    margin-bottom: 10px; 
+    text-align: justify; /* Justifica el texto en h2 */
+}
