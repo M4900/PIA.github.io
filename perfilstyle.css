@@ -111,6 +111,8 @@ li {
     padding: 10px;
     list-style-type: none; 
     border-bottom: 1px solid purple; 
+    border-radius: 8px; /* Ajusta el valor para el grado de redondeo */
+
 }
 
 li a {
