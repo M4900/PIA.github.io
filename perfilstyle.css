@@ -116,7 +116,7 @@ h2 {
 }
 
 .sidebar ul li.active {
-    background-color: #5B2C6F; /* Color de fondo cuando está activo */
+    background-color: #ABEBC6 ; /* Color de fondo cuando está activo */
     border-radius: 10px; /* Bordes redondeados */
 }
 
