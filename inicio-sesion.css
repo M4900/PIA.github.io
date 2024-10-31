@@ -72,6 +72,8 @@ h2 {
     text-decoration: none; /* Elimina el subrayado en enlaces */
     display: inline-block; /* Para que se comporte como un botón */
     margin-top: 10px; /* Espacio superior */
+   font-weight: bold; /* Texto en negrita */
+    font-size: 16px; /* Aumentar el tamaño de la fuente */
 }
 
 .btn-volver:hover {
