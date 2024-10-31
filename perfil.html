@@ -27,7 +27,7 @@
             justify-content: space-between;
         }
         .button {
-            background-color: #884EA0 ;
+            background-color: #884EA0;
             color: white;
             border: none;
             padding: 10px 20px;
@@ -36,6 +36,17 @@
         }
         .button:hover {
             background-color: #6C3483; /* Cambia al pasar el mouse */
+        }
+        .especialistas-list {
+            list-style-type: none; /* Eliminar viñetas */
+            padding: 0; /* Sin padding */
+        }
+        .especialista-item {
+            background-color: #DDA0DD; /* Color de fondo */
+            margin: 5px 0; /* Espaciado entre elementos */
+            padding: 10px;
+            border-radius: 5px; /* Bordes redondeados */
+            text-align: center;
         }
     </style>
 </head>
@@ -54,7 +65,6 @@
             </ul>
         </nav>
         <main class="content">
-            
             <div id="citas" class="info" style="display: none;">
                 <div class="citas-container">
                     <div class="citas-box">
@@ -69,7 +79,13 @@
             </div>
             <div id="buscar" class="info" style="display: none;">
                 <h2>Buscar Especialista</h2>
-                <p>Encuentra un especialista que se adapte a tus necesidades.</p>
+                <ul class="especialistas-list">
+                    <li class="especialista-item">Dr. Juan Pérez - Psicólogo</li>
+                    <li class="especialista-item">Dra. Ana Gómez - Psiquiatra</li>
+                    <li class="especialista-item">Dr. Carlos Rodríguez - Terapeuta</li>
+                    <li class="especialista-item">Dra. Laura Fernández - Psicóloga Infantil</li>
+                    <li class="especialista-item">Dr. Luis Martínez - Terapeuta de Pareja</li>
+                </ul>
             </div>
             <div id="chat" class="info" style="display: none;">
                 <h2>Chat</h2>
@@ -83,25 +99,26 @@
     </div>
 
     <script>
-function mostrarContenido(id, selectedLink) {
-    // Ocultar todos los contenidos
-    const infos = document.querySelectorAll('.info');
-    infos.forEach(info => info.style.display = 'none');
+        function mostrarContenido(id, selectedLink) {
+            // Ocultar todos los contenidos
+            const infos = document.querySelectorAll('.info');
+            infos.forEach(info => info.style.display = 'none');
 
-    // Mostrar el contenido seleccionado
-    document.getElementById(id).style.display = 'block';
+            // Mostrar el contenido seleccionado
+            document.getElementById(id).style.display = 'block';
 
-    // Cambiar color de los enlaces del menú
-    const menuItems = document.querySelectorAll('.menu-item');
-    menuItems.forEach(item => {
-        item.style.color = ''; // Resetea el color
-        item.style.backgroundColor = ''; // Resetea el fondo
-    });
-
-
-}
+            // Cambiar color de los enlaces del menú
+            const menuItems = document.querySelectorAll('.menu-item');
+            menuItems.forEach(item => {
+                item.style.color = ''; // Resetea el color
+                item.style.backgroundColor = ''; // Resetea el fondo
+            });
+            // Resaltar el enlace seleccionado
+            selectedLink.style.color = 'white'; // Color del texto
+            selectedLink.style.backgroundColor = '#884EA0'; // Fondo resaltado
+        }
     </script>
-     <footer>
+    <footer>
         <p>Contacto:<br> Tel.8111119023 <br> e-mail: Conestu@gmail.com</p>
     </footer>
 </body>
