@@ -19,13 +19,17 @@ main {
         margin: 0 auto; /* Centro el contenido */
         max-width: 800px; /* Limita el ancho máximo */
     }
-.button {
+button {
     background: #333;
     color: white;
     padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+button:hover {
+    background: #555; /* Cambia el color del botón al pasar el ratón */
 }
 .logo-container {
     display: flex; /* Alinear logo e h1 horizontalmente */
