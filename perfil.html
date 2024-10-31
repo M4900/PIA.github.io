@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Interfaz con Menú Lateral</title>
+</head>
+<body>
+    <header>
+        <h1>CONESTU</h1>
+        <img src="LOGO.jpeg" class="imagen" alt="Logo de CONESTU">
+    </header>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#" onclick="mostrarContenido('inicio')">INICIO</a></li>
+                <li><a href="#" onclick="mostrarContenido('citas')">CITAS</a></li>
+                <li><a href="#" onclick="mostrarContenido('buscar')">BUSCAR ESPECIALISTA</a></li>
+                <li><a href="#" onclick="mostrarContenido('chat')">CHAT</a></li>
+                <li><a href="#" onclick="mostrarContenido('cuenta')">MI CUENTA</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <div id="inicio" class="info">
+                <h2>Bienvenido a CONESTU</h2>
+                <p>Aquí encontrarás información sobre salud mental y nuestros servicios.</p>
+            </div>
+            <div id="citas" class="info" style="display: none;">
+                <h2>Citas</h2>
+                <p>Consulta y gestiona tus citas aquí.</p>
+            </div>
+            <div id="buscar" class="info" style="display: none;">
+                <h2>Buscar Especialista</h2>
+                <p>Encuentra un especialista que se adapte a tus necesidades.</p>
+            </div>
+            <div id="chat" class="info" style="display: none;">
+                <h2>Chat</h2>
+                <p>Inicia un chat con un especialista.</p>
+            </div>
+            <div id="cuenta" class="info" style="display: none;">
+                <h2>Mi Cuenta</h2>
+                <p>Gestiona la información de tu cuenta aquí.</p>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function mostrarContenido(id) {
+            // Ocultar todos los contenidos
+            const infos = document.querySelectorAll('.info');
+            infos.forEach(info => info.style.display = 'none');
+
+            // Mostrar el contenido seleccionado
+            document.getElementById(id).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
