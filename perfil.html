@@ -83,14 +83,25 @@
     </div>
 
     <script>
-        function mostrarContenido(id) {
-            // Ocultar todos los contenidos
-            const infos = document.querySelectorAll('.info');
-            infos.forEach(info => info.style.display = 'none');
+function mostrarContenido(id, selectedLink) {
+    // Ocultar todos los contenidos
+    const infos = document.querySelectorAll('.info');
+    infos.forEach(info => info.style.display = 'none');
 
-            // Mostrar el contenido seleccionado
-            document.getElementById(id).style.display = 'block';
-        }
+    // Mostrar el contenido seleccionado
+    document.getElementById(id).style.display = 'block';
+
+    // Cambiar color de los enlaces del menú
+    const menuItems = document.querySelectorAll('.menu-item');
+    menuItems.forEach(item => {
+        item.style.color = ''; // Resetea el color
+        item.style.backgroundColor = ''; // Resetea el fondo
+    });
+
+    // Establece el estilo para el enlace seleccionado
+    selectedLink.style.color = 'white'; // Cambia el color del texto
+    selectedLink.style.backgroundColor = '#884EA0'; // Cambia el fondo del enlace seleccionado
+}
     </script>
      <footer>
         <p>Contacto:<br> Tel.8111119023 <br> e-mail: Conestu@gmail.com</p>
