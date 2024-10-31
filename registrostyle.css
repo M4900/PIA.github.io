@@ -6,6 +6,11 @@ header {
     justify-content: space-between; /* Espacio entre elementos */
     align-items: center; /* Centra verticalmente los elementos */
 }
+main {
+        padding: 20px; /* Espacio interno */
+        margin: 0 auto; /* Centro el contenido */
+        max-width: 800px; /* Limita el ancho máximo */
+    }
 .imagen {
     width: 100px; 
     height: 100px; 
