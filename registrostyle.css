@@ -62,4 +62,20 @@ h2 {
         input[type="submit"]:hover {
             background-color: #D7CDFE;
         }
-    
+    .btn-volver {
+    background-color:  #CAC7FF /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    text-decoration: none; /* Elimina el subrayado en enlaces */
+    display: inline-block; /* Para que se comporte como un botón */
+    margin-top: 10px; /* Espacio superior */
+   font-weight: bold; /* Texto en negrita */
+    font-size: 16px; /* Aumentar el tamaño de la fuente */
+}
+
+.btn-volver:hover {
+    background-color: #D7CDFE; /* Cambia el color de fondo al pasar el ratón */
+}
