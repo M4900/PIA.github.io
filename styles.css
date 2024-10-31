@@ -14,6 +14,12 @@ header {
     align-items: center; /* Centra verticalmente los elementos */
 }
 
+main {
+        padding: 20px; /* Espacio interno */
+        margin: 0 auto; /* Centro el contenido */
+        max-width: 800px; /* Limita el ancho máximo */
+    }
+
 .logo-container {
     display: flex; /* Alinear logo e h1 horizontalmente */
     align-items: center; /* Centra verticalmente el contenido del contenedor */
