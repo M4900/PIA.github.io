@@ -57,7 +57,7 @@ h2 {
             padding: 10px;
             border-radius: 5px;
             cursor: pointer;
-            width: 90%;
+            width: 100%;
         }
         input[type="submit"]:hover {
             background-color: #218838;
