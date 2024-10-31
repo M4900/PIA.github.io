@@ -6,6 +6,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="perfilstyle.css">
     <title>Perfil</title>
+    <style>
+        .citas-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .citas-box {
+            background-color: #AF7AC5;
+            color: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            text-align: center;
+            width: 300px; /* Ajusta el ancho según sea necesario */
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .button {
+            background-color: #809BCE;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #218838; /* Cambia al pasar el mouse */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -28,8 +60,16 @@
                 <p>Aquí encontrarás información sobre salud mental y nuestros servicios.</p>
             </div>
             <div id="citas" class="info" style="display: none;">
-                <h2>Citas</h2>
-                <p>Consulta y gestiona tus citas aquí.</p>
+                <div class="citas-container">
+                    <div class="citas-box">
+                        <h2>Próximas citas</h2>
+                        <p>No tienes citas programadas.</p> <!-- Puedes personalizar este contenido -->
+                    </div>
+                    <div class="citas-box button-container">
+                        <button class="button">Agendar</button>
+                        <button class="button">Buscar</button>
+                    </div>
+                </div>
             </div>
             <div id="buscar" class="info" style="display: none;">
                 <h2>Buscar Especialista</h2>
@@ -58,6 +98,6 @@
     </script>
      <footer>
         <p>Contacto:<br> Tel.8111119023 <br> e-mail: Conestu@gmail.com</p>
-</footer>
+    </footer>
 </body>
 </html>
