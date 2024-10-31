@@ -47,10 +47,10 @@
     <div class="container">
         <nav class="sidebar">
             <ul>
-                <li><a href="#" onclick="mostrarContenido('citas')">CITAS</a></li>
-                <li><a href="#" onclick="mostrarContenido('buscar')">BUSCAR ESPECIALISTA</a></li>
-                <li><a href="#" onclick="mostrarContenido('chat')">CHAT</a></li>
-                <li><a href="#" onclick="mostrarContenido('cuenta')">MI CUENTA</a></li>
+                <li><a href="#" class="menu-item" onclick="mostrarContenido('citas')">CITAS</a></li>
+                <li><a href="#" class="menu-item" onclick="mostrarContenido('buscar')">BUSCAR ESPECIALISTA</a></li>
+                <li><a href="#" class="menu-item" onclick="mostrarContenido('chat')">CHAT</a></li>
+                <li><a href="#" class="menu-item" onclick="mostrarContenido('cuenta')">MI CUENTA</a></li>
             </ul>
         </nav>
         <main class="content">
@@ -98,9 +98,7 @@ function mostrarContenido(id, selectedLink) {
         item.style.backgroundColor = ''; // Resetea el fondo
     });
 
-    // Establece el estilo para el enlace seleccionado
-    selectedLink.style.color = 'white'; // Cambia el color del texto
-    selectedLink.style.backgroundColor = '#884EA0'; // Cambia el fondo del enlace seleccionado
+
 }
     </script>
      <footer>
