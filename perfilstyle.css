@@ -104,22 +104,14 @@ h2 {
     margin-bottom: 10px; 
     text-align: justify; /* Justifica el texto en h2 */
 }
-
-.sidebar ul li {
+li {
     display: block; 
     background-color: #AF7AC5; /* Color de fondo del elemento de lista */
     margin: 0;
     padding: 10px;
     list-style-type: none; 
     border-bottom: 1px solid purple; 
-    border-radius: 10px; /* Bordes redondeados */
 }
-
-.sidebar ul li.active {
-    background-color: #ABEBC6 ; /* Color de fondo cuando está activo */
-    border-radius: 10px; /* Bordes redondeados */
-}
-
 li a {
     text-decoration: none; 
     color: white; /* Color del enlace en la lista */
